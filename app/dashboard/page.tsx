@@ -21,7 +21,7 @@ export default async function Dashboard() {
         <h2 className="text-3xl font-semibold mb-6">Dashboard Overview</h2>
 
         {/* 🔥 Realtime analytics (today, weekly, monthly) */}
-        <RealtimeScanAnalytics />
+        <RealtimeScanAnalytics businessId={business._id.toString()}/>
         <div className="mt-6">
 <iframe
   src={`https://www.google.com/maps?q=place_id:${placeId}&output=embed`}
